@@ -2,10 +2,14 @@
   <div class="index">
     <el-row>
       <el-col :span="18" :offset="3">
-        <el-button type="default">default</el-button>
+        <router-link :to="{name: 'signin'}">
+          <el-button type="success">sign in</el-button>
+        </router-link>
       </el-col>
       <el-col :span="18" :offset="3">
-        <el-button type="primary">primary</el-button>
+        <router-link :to="{name: 'signup'}">
+          <el-button type="primary">sign up</el-button>
+        </router-link>
       </el-col>
     </el-row>
   </div>
@@ -37,6 +41,7 @@ export default {
         margin-bottom: 10px;
         button {
           width: 100%;
+          font-size: 16px;
         }
       }
     }
